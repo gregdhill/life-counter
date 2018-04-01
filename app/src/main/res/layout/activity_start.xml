@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/mtg">
+
+    <io.greghill.lifecounter.MTGTextView
+        android:id="@+id/mainTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Life Counter"
+        android:textSize="50sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF" />
+
+    <io.greghill.lifecounter.MTGTextView
+        android:id="@+id/playTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Number of Players:"
+        android:layout_marginTop="40dp"
+        android:layout_above="@id/numPlayers"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF" />
+
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/numPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:np_width="180dp"
+        app:np_height="64dp"
+        app:np_dividerColor="@color/white"
+        app:np_max="4"
+        app:np_min="1"
+        app:np_order="ascending"
+        app:np_orientation="horizontal"
+        app:np_selectedTextColor="@color/colorAccent"
+        app:np_fadingEdgeEnabled="false"
+        app:np_wrapSelectorWheel="true"
+        app:np_textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center" />
+
+
+    <Button
+        android:id="@+id/addPlayers"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/numPlayers"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:text="GO" />
+
+    <Button
+        android:id="@+id/diceBtn"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="80dp"
+        android:text="↻" />
+
+    <Button
+        android:id="@+id/infoBtn"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"        android:textColor="@color/white"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Info" />
+
+</RelativeLayout>

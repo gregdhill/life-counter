@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/mtg">
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/developer"
+        android:gravity="center"
+        android:text="About"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/developer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:layout_above="@+id/art"
+        android:gravity="center"
+        android:text="Greg Hill"
+        android:textSize="20sp"
+        android:textColorLink="@color/pink"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/art"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Art"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/lotus"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/art"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:padding="20px"
+        android:text="Black Lotus"
+        android:textColorLink="@color/pink" />
+
+    <TextView
+        android:id="@+id/life"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/lotus"
+        android:gravity="center"
+        android:text="Chalice of Life"
+        android:textColorLink="@color/pink"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
