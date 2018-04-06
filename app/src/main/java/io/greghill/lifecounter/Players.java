@@ -63,6 +63,7 @@ public class Players extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(Players.this, Counter.class)
                         .putExtra("numberOfPlayers", String.valueOf(getPlayers())));
+                die.setText("↻");
             }
         });
 
@@ -71,6 +72,7 @@ public class Players extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Players.this, Info.class));
+                die.setText("↻");
             }
         });
 

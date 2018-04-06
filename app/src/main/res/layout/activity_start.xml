@@ -25,13 +25,13 @@
 
     <io.greghill.lifecounter.MTGTextView
         android:id="@+id/playTitle"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:gravity="center"
         android:text="Number of Players:"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:layout_above="@id/numPlayers"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="30sp"
@@ -62,7 +62,6 @@
 
     <Button
         android:id="@+id/addPlayers"
-        android:background="@color/pink"
         android:textColor="@color/white"
         android:layout_width="120dp"
         android:layout_height="60dp"
@@ -71,13 +70,14 @@
         android:gravity="center"
         android:textSize="20sp"
         android:layout_marginTop="40dp"
-        android:text="GO" />
+        android:background="@drawable/buttonshape"
+        android:text="TRACK" />
 
     <Button
         android:id="@+id/diceBtn"
         android:layout_alignParentBottom="true"
-        android:background="@color/pink"
-        android:textColor="@color/white"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
@@ -89,7 +89,8 @@
     <Button
         android:id="@+id/infoBtn"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/transparent"        android:textColor="@color/white"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"
